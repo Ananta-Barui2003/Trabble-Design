@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabble-Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+    
+    <div class="header">
+
+        <div class="top_head">
+            <div class="container">
+                <div class="row wraper">
+                    <div class="left">
+                        <p><i class="fa-solid fa-location-dot"></i> <span>Seventh Avenue New York</span></p>
+                        <p><i class="fa-solid fa-phone"></i> <span>+123-456-7890</span></p>
+                        <p><i class="fa-regular fa-envelope"></i> <span>info@trabble.com</span></p>
+                    </div>
+                    <div class="book_btn">
+                        <a href="#">Book Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main_nav">
+            <div class="container">
+                <div class="row">
+                    <input type="checkbox" id="check">
+
+                    <div class="logo">
+                        <a href="#"><img src="images/logo (1).png" alt="logo"></a>
+                    </div>
+                    <ul class="menu_bar">
+                        <li><a class="active" href="#">home</a></li>
+                        <li><a href="#">package list</a></li>
+                        <li><a href="#">hotels</a></li>
+                        <li><a href="#">flights</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">pages</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                    <label for="check">
+                        <i class="fa-solid fa-bars-staggered" id="open_btn"></i>
+                        <i class="fa-solid fa-xmark" id="close_btn"></i>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div class="banner_slide">
+            <div class="banner_img">
+                <img src="images/banner-img-1.jpg" alt="">
+                <div class="banner_content">
+                    <h3>Open Your Eyes To</h3>
+                    <h1>The Hidden World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit proin leo leo ornare nec vulputate tempus
+                        velit nam id purus tellus hendrerit mi dapibus.</p>
+                    <div class="bnr_btn">
+                        <a href="#">start tour</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner_img">
+                <img src="images/banner-img-2.jpg" alt="">
+                <div class="banner_content">
+                    <h3>Open Your Eyes To</h3>
+                    <h1>The Hidden World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit proin leo leo ornare nec vulputate tempus
+                        velit nam id purus tellus hendrerit mi dapibus.</p>
+                    <div class="bnr_btn">
+                        <a href="#">start tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab_section">
+        <div class="container">
+            <div class="tab">
+                <button class="tablinks active" onclick="openCity(event, 'hotel')">
+                    <p>Hotels</p>
+                    <img src="images/hotel.png" alt="">
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'tour')">
+                    <p>Tour</p>
+                    <img src="images/tour.png" alt="">
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'flight')">
+                    <p>Flights</p>
+                    <img src="images/fly.png" alt="">
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'vehicles')">
+                    <p>Vehicles</p>
+                    <img src="images/car.png" alt="">
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'ship')">
+                    <p>Ship</p>
+                    <img src="images/ship.png" alt="">
+                </button>
+            </div>
+
+            <div id="hotel" class="tabcontent detail active">
+                <div class="all_service">
+                    <div class="serv_item">
+                        <input type="text" placeholder="Type Keyword">
+                    </div>
+                    <div class="serv_item">
+                        <select>
+                            <option>Select a Cuntry</option>
+                            <option>India</option>
+                            <option>Japan</option>
+                            <option>London</option>
+                            <option>Nepal</option>
+                            <option>Srilanka</option>
+                        </select>
+                    </div>
+                    <div class="serv_item">
+                        <input type="datetime-local" placeholder="Check-In">
+                    </div>
+                    <div class="serv_item">
+                        <input type="datetime-local" placeholder="Check-Out">
+                    </div>
+                    <div class="serv_item">
+                        <input type="number" placeholder="Guest">
+                    </div>
+                    <div class="serv_item">
+                        <input type="text" placeholder="Budget">
+                    </div>
+                    <div class="sech_btn">
+                        <input type="submit" value="SEARCH">
+                    </div>
+                </div>
+            </div>
+
+            <div id="tour" class="tabcontent detail">
+                <div class="all_service">
+                    <div class="serv_item">
+                        <input type="text" placeholder="Type Keyword">
+                    </div>
+                    <div class="serv_item">
+                        <select>
+                            <option>Select a Cuntry</option>
+                            <option>India</option>
+                            <option>Japan</option>
+                            <option>London</option>
+                            <option>Nepal</option>
+                            <option>Srilanka</option>
+                        </select>
+                    </div>
+                    <div class="serv_item">
+                        <input type="datetime-local" placeholder="Check-In">
+                    </div>
+                    <div class="serv_item">
+                        <input type="datetime-local" placeholder="Check-Out">
+                    </div>
+                    <div class="serv_item">
+                        <input type="number" placeholder="Guest">
+                    </div>
+                    <div class="serv_item">
+                        <input type="text" placeholder="Budget">
+                    </div>
+                    <div class="sech_btn">
+                        <input type="submit" value="SEARCH">
+                    </div>
+                </div>
+            </div>
+
+            <div id="flight" class="tabcontent detail">
+                <div class="all_service">
+                    <div class="serv_item">
+                        <input type="text" placeholder="Type Keyword">
+                    </div>
+                    <div class="serv_item">
+                        <select>
+                            <option>Select a Cuntry</option>
+                            <option>India</option>
+                            <option>Japan</option>
+                            <option>London</option>
+                            <option>Nepal</option>
+                            <option>Srilanka</option>
+                        </select>
+                    </div>
+                    <div class="serv_item">
+                        <input type="datetime-local" placeholder="Check-In">
+                    </div>
+                    <div class="serv_item">
+                        <input type="datetime-local" placeholder="Check-Out">
+                    </div>
+                    <div class="serv_item">
+                        <input type="number" placeholder="Guest">
+                    </div>
+                    <div class="serv_item">
+                        <input type="text" placeholder="Budget">
+                    </div>
+                    <div class="sech_btn">
+                        <input type="submit" value="SEARCH">
+                    </div>
+                </div>
+            </div>
+
+            <div id="vehicles" class="tabcontent detail">
+                <div class="all_service">
+                    <div class="serv_item">
+                        <input type="text" placeholder="Type Keyword">
+                    </div>
+                    <div class="serv_item">
+                        <select>
+                            <option>Select a Cuntry</option>
+                            <option>India</option>
+                            <option>Japan</option>
+                            <option>London</option>
+                            <option>Nepal</option>
+                            <option>Srilanka</option>
+                        </select>
+                    </div>
+                    <div class="serv_item">
+                        <input type="datetime-local" placeholder="Check-In">
+                    </div>
+                    <div class="serv_item">
+                        <input type="datetime-local" placeholder="Check-Out">
+                    </div>
+                    <div class="serv_item">
+                        <input type="number" placeholder="Guest">
+                    </div>
+                    <div class="serv_item">
+                        <input type="text" placeholder="Budget">
+                    </div>
+                    <div class="sech_btn">
+                        <input type="submit" value="SEARCH">
+                    </div>
+                </div>
+            </div>
+
+            <div id="ship" class="tabcontent detail">
+                <div class="all_service">
+                    <div class="serv_item">
+                        <input type="text" placeholder="Type Keyword">
+                    </div>
+                    <div class="serv_item">
+                        <select>
+                            <option>Select a Cuntry</option>
+                            <option>India</option>
+                            <option>Japan</option>
+                            <option>London</option>
+                            <option>Nepal</option>
+                            <option>Srilanka</option>
+                        </select>
+                    </div>
+                    <div class="serv_item">
+                        <input type="datetime-local" placeholder="Check-In">
+                    </div>
+                    <div class="serv_item">
+                        <input type="datetime-local" placeholder="Check-Out">
+                    </div>
+                    <div class="serv_item">
+                        <input type="number" placeholder="Guest">
+                    </div>
+                    <div class="serv_item">
+                        <input type="text" placeholder="Budget">
+                    </div>
+                    <div class="sech_btn">
+                        <input type="submit" value="SEARCH">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="popular_pack">
+        <div class="container">
+            <div class="titel">
+                <h2>Our Most Popular Packges</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales
+                    Sed luctus orci vel nibh aliquam laoreet Aenean accumsan
+                </p>
+            </div>
+
+            <div class="row wraper">
+                <div class="inner_box">
+                    <div class="pack_box">
+                        <div class="image">
+                            <a href="#"><img src="images/popular-img-1.jpg" alt=""></a>
+                        </div>
+                        <div class="pack_detl">
+                            <div class="place_name">
+                                <h4>Italy – All Stunning Places</h4>
+                                <p>4 Days, 5 Nights Start From <span>$500</span></p>
+                            </div>
+                            <div class="star_btn">
+                                <a href="#">book now</a>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner_box">
+                    <div class="pack_box">
+                        <div class="image">
+                            <a href="#"><img src="images/popular-img-2.jpg" alt=""></a>
+                        </div>
+                        <div class="pack_detl">
+                            <div class="place_name">
+                                <h4>Thailand – All Stunning Places</h4>
+                                <p>4 Days, 5 Nights Start From <span>$500</span></p>
+                            </div>
+                            <div class="star_btn">
+                                <a href="#">book now</a>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner_box">
+                    <div class="pack_box">
+                        <div class="image">
+                            <a href="#"><img src="images/popular-img-3.jpg" alt=""></a>
+                        </div>
+                        <div class="pack_detl">
+                            <div class="place_name">
+                                <h4>England – All Stunning Places</h4>
+                                <p>4 Days, 5 Nights Start From <span>$500</span></p>
+                            </div>
+                            <div class="star_btn">
+                                <a href="#">book now</a>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner_box">
+                    <div class="pack_box">
+                        <div class="image">
+                            <a href="#"><img src="images/popular-img-4.jpg" alt=""></a>
+                        </div>
+                        <div class="pack_detl">
+                            <div class="place_name">
+                                <h4>Italy – All Stunning Places</h4>
+                                <p>4 Days, 5 Nights Start From <span>$500</span></p>
+                            </div>
+                            <div class="star_btn">
+                                <a href="#">book now</a>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner_box">
+                    <div class="pack_box">
+                        <div class="image">
+                            <a href="#"><img src="images/popular-img-5.jpg" alt=""></a>
+                        </div>
+                        <div class="pack_detl">
+                            <div class="place_name">
+                                <h4>Brazil – All Stunning Places</h4>
+                                <p>4 Days, 5 Nights Start From <span>$500</span></p>
+                            </div>
+                            <div class="star_btn">
+                                <a href="#">book now</a>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner_box">
+                    <div class="pack_box">
+                        <div class="image">
+                            <a href="#"><img src="images/popular-img-6.jpg" alt=""></a>
+                        </div>
+                        <div class="pack_detl">
+                            <div class="place_name">
+                                <h4>India – All Stunning Places</h4>
+                                <p>4 Days, 5 Nights Start From <span>$500</span></p>
+                            </div>
+                            <div class="star_btn">
+                                <a href="#">book now</a>
+                                <p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="discount">
+        <div class="container">
+            <div class="titel">
+                <h3>Special Tour in May, Discover <span>Thailand</span> for 50 Customers with <span>Discount 30%</span>
+                </h3>
+                <p>It’s limited seating! Hurry up</p>
+            </div>
+            <div class="disc_wrap">
+                <div class="row wraper">
+                    <div class="days time_box">
+                      <div class="inner">
+                            <h2 id="days">DD</h2>
+                            <span>days</span>
+                      </div>
+                    </div>
+                    <div class="hours time_box">
+                      <div class="inner">
+                            <h2 id="hours">HH</h2>
+                            <span>hour</span>
+                      </div>
+                    </div>
+                    <div class="minutes time_box">
+                      <div class="inner">
+                            <h2 id="minutes">MM</h2>
+                            <span>min</span>
+                      </div>
+                    </div>
+                    <div class="seconds time_box">
+                      <div class="inner">
+                            <h2 id="seconds">SS</h2>
+                            <span>sec</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buy_btn">
+                <a href="#">Buy now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination">
+        <div class="container">
+            <div class="titel">
+                <h2>Most Popular Destination</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales
+                    Sed luctus orci vel nibh aliquam laoreet Aenean accumsan
+                </p>
+            </div>
+
+            <div class="place_slide">
+                <div class="inner_box">
+                    <div class="place_img">
+                        <img src="images/place-img1.jpg" alt="">
+                        <div class="read_btn">
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="place_detail">
+                        <a href="#"><i class="fa-solid fa-location-dot"></i> Sydney, Australia</a>
+                        <p>Opera House <span>3 Tours</span></p>
+                    </div>
+                </div>
+
+                <div class="inner_box">
+                    <div class="place_img">
+                        <img src="images/place-img2.jpg" alt="">
+                        <div class="read_btn">
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="place_detail">
+                        <a href="#"><i class="fa-solid fa-location-dot"></i> London, Eangland</a>
+                        <p>Tower Bridge <span>5 Tours</span></p>
+                    </div>
+                </div>
+
+                <div class="inner_box">
+                    <div class="place_img">
+                        <img src="images/place-img3.jpg" alt="">
+                        <div class="read_btn">
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="place_detail">
+                        <a href="#"><i class="fa-solid fa-location-dot"></i> Paris, France</a>
+                        <p>Eiffel Tower <span>4 Tours</span></p>
+                    </div>
+                </div>
+
+                <div class="inner_box">
+                    <div class="place_img">
+                        <img src="images/place-img4.jpg" alt="">
+                        <div class="read_btn">
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="place_detail">
+                        <a href="#"><i class="fa-solid fa-location-dot"></i> New york, USA</a>
+                        <p>Statue Of Liberty <span>3 Tours</span></p>
+                    </div>
+                </div>
+
+                <div class="inner_box">
+                    <div class="place_img">
+                        <img src="images/place-img4.jpg" alt="">
+                        <div class="read_btn">
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="place_detail">
+                        <a href="#"><i class="fa-solid fa-location-dot"></i> Agra, India</a>
+                        <p>Tajmahal <span>5 Tours</span></p>
+                    </div>
+                </div>
+
+                <div class="inner_box">
+                    <div class="place_img">
+                        <img src="images/place-img3.jpg" alt="">
+                        <div class="read_btn">
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="place_detail">
+                        <a href="#"><i class="fa-solid fa-location-dot"></i> Paris, France</a>
+                        <p>Eiffel Tower <span>4 Tours</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why_choose">
+        <div class="container">
+            <div class="titel">
+                <h2>Why Choose Travlestar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales
+                    Sed luctus orci vel nibh aliquam laoreet Aenean accumsan
+                </p>
+            </div>
+            <div class="row wraper">
+                <div class="item_box">
+                    <div class="inner_box">
+                        <div class="number">
+                            <h2>01.</h2>
+                        </div>
+                        <div class="detail">
+                            <h4>Travel Arrangements</h4>
+                            <p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_box">
+                    <div class="inner_box">
+                        <div class="number">
+                            <h2>02.</h2>
+                        </div>
+                        <div class="detail">
+                            <h4>Cheap Flights</h4>
+                            <p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_box">
+                    <div class="inner_box">
+                        <div class="number">
+                            <h2>03.</h2>
+                        </div>
+                        <div class="detail">
+                            <h4>Hand-picked tours</h4>
+                            <p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_box">
+                    <div class="inner_box">
+                        <div class="number">
+                            <h2>04.</h2>
+                        </div>
+                        <div class="detail">
+                            <h4>Privet Guide</h4>
+                            <p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_box">
+                    <div class="inner_box">
+                        <div class="number">
+                            <h2>05.</h2>
+                        </div>
+                        <div class="detail">
+                            <h4>Special Activities</h4>
+                            <p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item_box">
+                    <div class="inner_box">
+                        <div class="number">
+                            <h2>06.</h2>
+                        </div>
+                        <div class="detail">
+                            <h4>Best Price Guarantee</h4>
+                            <p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="expert_advice">
+        <div class="container">
+            <div class="titel">
+                <h2>Travel Guide And Expert Advice</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales
+                    Sed luctus orci vel nibh aliquam laoreet Aenean accumsan
+                </p>
+            </div>
+            <div class="row wraper">
+                <div class="inner">
+                    <div class="item_box">
+                        <div class="image">
+                            <a href="#"><img src="images/expert-img1.jpg" alt=""></a>
+                        </div>
+                        <div class="expert_tips">
+                            <div class="blog_date">
+                                <div class="date">
+                                    <p><i class="fa-regular fa-calendar-days"></i> 12 Sep, 2018</p>
+                                </div>
+                                <ul class="like_comnt">
+                                    <li><a href="#"><i class="fa-solid fa-comment-dots"></i> 3</a></li>
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i> 43</a></li>
+                                </ul>
+                            </div>
+                            <div class="blog_content">
+                                <h4>Tips For Taking A Long-Term Trip With Kids.</h4>
+                                <p>Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at ipsum at ligula
+                                    vestibulum sodales Sed luctus.</p>
+                                <div class="read_btn">
+                                    <a href="#">Read more <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner">
+                    <div class="item_box">
+                        <div class="image">
+                            <a href="#"><img src="images/expert-img2.jpg" alt=""></a>
+                        </div>
+                        <div class="expert_tips">
+                            <div class="blog_date">
+                                <div class="date">
+                                    <p><i class="fa-regular fa-calendar-days"></i> 12 Aug, 2018</p>
+                                </div>
+                                <ul class="like_comnt">
+                                    <li><a href="#"><i class="fa-solid fa-comment-dots"></i> 3</a></li>
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i> 43</a></li>
+                                </ul>
+                            </div>
+                            <div class="blog_content">
+                                <h4>Tips For Taking A Long-Term Trip With Kids.</h4>
+                                <p>Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at ipsum at ligula
+                                    vestibulum sodales Sed luctus.</p>
+                                <div class="read_btn">
+                                    <a href="#">Read more <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner">
+                    <div class="item_box">
+                        <div class="image">
+                            <a href="#"><img src="images/expert-img3.jpg" alt=""></a>
+                        </div>
+                        <div class="expert_tips">
+                            <div class="blog_date">
+                                <div class="date">
+                                    <p><i class="fa-regular fa-calendar-days"></i> 12 Jul, 2018</p>
+                                </div>
+                                <ul class="like_comnt">
+                                    <li><a href="#"><i class="fa-solid fa-comment-dots"></i> 3</a></li>
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i> 43</a></li>
+                                </ul>
+                            </div>
+                            <div class="blog_content">
+                                <h4>Tips For Taking A Long-Term Trip With Kids.</h4>
+                                <p>Lorem ipsum dolor sit amet consepctetur adipiscing elit Etiam at ipsum at ligula
+                                    vestibulum sodales Sed luctus.</p>
+                                <div class="read_btn">
+                                    <a href="#">Read more <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="titel">
+                <h2>What Travellers Say About Us</h2>
+            </div>
+            <div class="user_slide">
+                <div class="user_img">
+                    <img src="images/testimonials-img1.jpg" alt="">
+                </div>
+                <div class="user_img">
+                    <img src="images/testimonials-img2.jpg" alt="">
+                </div>
+                <div class="user_img">
+                    <img src="images/testimonials-img3.jpg" alt="">
+                </div>
+                <div class="user_img">
+                    <img src="images/testimonials-img4.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="user_data_slide">
+                <div class="data_box">
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet, consecteituer adipiscing eluit, sed diapm nonummy nibhu euismod
+                            tincidunt ut laoreet dolor you magna aliquam erat volutpat. Ut wisi enim adefra miniumyp
+                            veniam, quis nostrud.
+                        </p>
+                    </div>
+                    <div class="rating">
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <div class="user_name">
+                        <h4>Jhonthan Smith</h4>
+                        <p>London Trip Travelers</p>
+                    </div>
+                </div>
+                <div class="data_box">
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet, consecteituer adipiscing eluit, sed diapm nonummy nibhu euismod
+                            tincidunt ut laoreet dolor you magna aliquam erat volutpat. Ut wisi enim adefra miniumyp
+                            veniam, quis nostrud.
+                        </p>
+                    </div>
+                    <div class="rating">
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <div class="user_name">
+                        <h4>Daniel Baci</h4>
+                        <p>Thailand Trip Travelers</p>
+                    </div>
+                </div>
+                <div class="data_box">
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet, consecteituer adipiscing eluit, sed diapm nonummy nibhu euismod
+                            tincidunt ut laoreet dolor you magna aliquam erat volutpat. Ut wisi enim adefra miniumyp
+                            veniam, quis nostrud.
+                        </p>
+                    </div>
+                    <div class="rating">
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <div class="user_name">
+                        <h4>John Doe</h4>
+                        <p>USA Trip Travelers</p>
+                    </div>
+                </div>
+                <div class="data_box">
+                    <div class="message">
+                        <p>Lorem ipsum dolor sit amet, consecteituer adipiscing eluit, sed diapm nonummy nibhu euismod
+                            tincidunt ut laoreet dolor you magna aliquam erat volutpat. Ut wisi enim adefra miniumyp
+                            veniam, quis nostrud.
+                        </p>
+                    </div>
+                    <div class="rating">
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </div>
+                    <div class="user_name">
+                        <h4>John Doe</h4>
+                        <p>USA Trip Travelers</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="incredible_places">
+        <div class="container">
+            <div class="titel">
+                <h2>Incredible Places</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales
+                    Sed luctus orci vel nibh aliquam laoreet Aenean accumsan
+                </p>
+            </div>
+            <div class="row wraper">
+                <div class="place_box">
+                    <div class="image">
+                        <a href="#">
+                            <img src="images/increable-place-img1.jpg" alt="">
+                            <div class="img_caption">
+                                <p><span>Place:</span> Eiffel Tower</p>
+                                <p><span>Caption By:</span> Michel Jusi</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="place_box">
+                    <div class="image">
+                        <a href="#">
+                            <img src="images/increable-place-img2.jpg" alt="">
+                            <div class="img_caption">
+                                <p><span>Place:</span> China Town</p>
+                                <p><span>Caption By:</span> Daniel Baci</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="place_box">
+                    <div class="image">
+                        <a href="#">
+                            <img src="images/increable-place-img3.jpg" alt="">
+                            <div class="img_caption">
+                                <p><span>Place:</span> England Bridge</p>
+                                <p><span>Caption By:</span> John Adam</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="place_box">
+                    <div class="image">
+                        <a href="#">
+                            <img src="images/increable-place-img4.jpg" alt="">
+                            <div class="img_caption">
+                                <p><span>Place:</span> Eiffel Tower</p>
+                                <p><span>Caption By:</span> Michel Jusi</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="place_box">
+                    <div class="image">
+                        <a href="#">
+                            <img src="images/increable-place-img5.jpg" alt="">
+                            <div class="img_caption">
+                                <p><span>Place:</span> China Town</p>
+                                <p><span>Caption By:</span> Daniel Baci</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="place_box">
+                    <div class="image">
+                        <a href="#">
+                            <img src="images/increable-place-img6.jpg" alt="">
+                            <div class="img_caption">
+                                <p><span>Place:</span> England Bridge</p>
+                                <p><span>Caption By:</span> John Adam</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="container">
+            <div class="titel">
+                <h2>Join Our Subscribe List</h2>
+            </div>
+            <form class="sub_form">
+                <input type="email" name="email" placeholder="Enter Your Email TO Subscribe">
+                <button>send</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="our_petner">
+        <div class="container">
+            <div class="titel">
+                <h2>Out Trusted Partners</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales
+                    Sed luctus orci vel nibh aliquam laoreet Aenean accumsan
+                </p>
+            </div>
+            <div class="petner_slide">
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img1.png" alt=""></a>
+                </div>
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img2.png" alt=""></a>
+                </div>
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img3.png" alt=""></a>
+                </div>
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img4.png" alt=""></a>
+                </div>
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img5.png" alt=""></a>
+                </div>
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img1.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="petner_slide">
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img1.png" alt=""></a>
+                </div>
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img2.png" alt=""></a>
+                </div>
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img3.png" alt=""></a>
+                </div>
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img4.png" alt=""></a>
+                </div>
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img5.png" alt=""></a>
+                </div>
+                <div class="inner_box">
+                    <a href="#"><img src="images/petner-img1.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row wraper">
+                <div class="footr_inner">
+                    <div class="logo">
+                        <a href="#"><img src="images/logo (1).png" alt=""></a>
+                    </div>
+                    <p class="text">Lorem ipsum dolor sit amet conset ctetur adipiscin elit Etiam at ipsum at ligula
+                        vestibulum sodales.</p>
+                    <div class="address">
+                        <div class="icon">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                        </div>
+                        <div class="detail">
+                            <p>Seventh Avenue New York</p>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="icon">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+                        <div class="detail">
+                            <a href="tel:+123-456-7890">+123-456-7890</a>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="icon">
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                        </div>
+                        <div class="detail">
+                            <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footr_inner">
+                    <h4>Recent News</h4>
+                    <div class="news_box">
+                        <div class="news_img">
+                            <a href="#"><img src="images/footer-news-img1.jpg" alt=""></a>
+                        </div>
+                        <div class="news_text">
+                            <a href="#">A Clean Website Gives More Experience To The Visitors.</a>
+                            <p>12 July, 2018</p>
+                        </div>
+                    </div>
+
+                    <div class="news_box">
+                        <div class="news_img">
+                            <a href="#"><img src="images/footer-news-img2.jpg" alt=""></a>
+                        </div>
+                        <div class="news_text">
+                            <a href="#">A Clean Website Gives More Experience To The Visitors.</a>
+                            <p>12 July, 2018</p>
+                        </div>
+                    </div>
+
+                    <div class="news_box">
+                        <div class="news_img">
+                            <a href="#"><img src="images/footer-news-img3.jpg" alt=""></a>
+                        </div>
+                        <div class="news_text">
+                            <a href="#">A Clean Website Gives More Experience To The Visitors.</a>
+                            <p>12 July, 2018</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footr_inner">
+                    <h4>Destination</h4>
+                    <div class="desti_wrap">
+                        <div class="item_box">
+                            <a href="#">
+                                <img src="images/place-img1.jpg" alt="">
+                                <div class="caption">
+                                    <span>Austrila</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_box">
+                            <a href="#">
+                                <img src="images/place-img2.jpg" alt="">
+                                <div class="caption">
+                                    <span>England</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_box">
+                            <a href="#">
+                                <img src="images/place-img3.jpg" alt="">
+                                <div class="caption">
+                                    <span>France</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item_box">
+                            <a href="#">
+                                <img src="images/place-img4.jpg" alt="">
+                                <div class="caption">
+                                    <span>America</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footr_inner">
+                    <h4>Quick Contact</h4>
+                    <form class="ftr_form">
+                        <input type="email" name="email" placeholder="Email Address">
+                        <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                        <button class="snd_btn">Send</button>
+                    </form>
+                    <h5>Follow Us</h5>
+                    <ul class="social_link">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copy_right">
+                <div class="left">
+                    <p>Copyright © 2018 Trabble By <span>SylTheme</span></p>
+                </div>
+                <ul class="payment">
+                    <li>
+                        <p>We Accept</p>
+                    </li>
+                    <li><img src="images/payicon01.png" alt=""></li>
+                    <li><img src="images/payicon02.png" alt=""></li>
+                    <li><img src="images/payicon03.png" alt=""></li>
+                    <li><img src="images/payicon04.png" alt=""></li>
+                    <li><img src="images/payicon05.png" alt=""></li>
+                    <li><img src="images/payicon06.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- ======================all file linked here=================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/banner-slider.js"></script>
+    <script src="js/tab-change.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/place-slider.js"></script>
+    <script src="js/petner-slider.js"></script>
+    <script src="js/testimonial.js"></script>
+    <!-- ======================all file linked here=================== -->
+
+
+
+</body>
+
+</html>
